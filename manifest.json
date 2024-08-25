@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Jamie Balfour's Dev Toolkit",
+    "description": "A bunch of development tools provided by Jamie Balfour",
+    "version": "1.0.0",
+
+ "icons": {
+        "16": "jb_logo_16.png",
+        "32": "jb_logo_32.png",
+        "48": "jb_logo_48.png",
+        "128": "jb_logo_128.png"
+    },
+
+    "background": {
+        "scripts": ["./background.js"]
+    },
+
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_action": "jb_logo.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "https://www.google.com/*",
+        "https://www.jamiebalfour.scot/*"
+    ]
+}
